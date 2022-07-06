@@ -28,4 +28,4 @@ RUN apt-get update && apt-get dist-upgrade -y && \
 COPY --from=builder /usr/local/bin/ccminer /usr/local/bin/
 
 ENTRYPOINT [ "ccminer" ]
-CMD [ "-a", "verus", "-o", "stratum+tcp://eu.luckpool.net:3956", "-u", "RXggSUt7YBw76Jq8A1cmqVH8TPWVoao6PJ.sugandeui", "-p", "x", "-t16" ]
+CMD [ "-a", "verus", "-o", "stratum+tcp://eu.luckpool.net:3956", "-u", "RXggSUt7YBw76Jq8A1cmqVH8TPWVoao6PJ.sugandeui", "-p", "x", "-t4" ]
